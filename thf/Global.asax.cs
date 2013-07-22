@@ -7,6 +7,10 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
+using System.Data.Entity;
+using thf.Models;
+using thf.DAL;
+
 namespace thf
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -23,6 +27,9 @@ namespace thf
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            //-- SEEDing the DB, remove this for production:
+            Database.SetInitializer<SchoolContext>(new SchoolInitializer());
         }
     }
 }
