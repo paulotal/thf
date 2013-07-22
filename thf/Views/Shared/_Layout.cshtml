@@ -10,12 +10,11 @@
     </head>
     <body>
         <header>
-            <div class="content-wrapper">
-                <div class="float-left">
+            <div id="header">
+                <div class="header-left">
                     <div id="logo"></div>
-                   @* <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>*@
                 </div>
-                <div class="float-right">
+                <div class="header-right">
                     <section id="login">
                         @Html.Partial("_LoginPartial")
                     </section>
@@ -41,11 +40,21 @@
             </section>
         </div>
         <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>Education. Performance. Transition.<br />
-                        2013 The Honor Founation, All Rights Reserved.</p>
+            <!-- Footer   -->
+            <div id="footer">
+
+                <div class="footer-left">
+                    <p>
+                        Existing operators are the <b>most highly qualified</b> employees in the private
+                        sector. THG has been  studying this transition as a science for years.
+                    </p>
+
                 </div>
+
+                <div class="footer_right">
+                    <div id="logo-footer"></div>
+
+                </div>  
             </div>
         </footer>
 

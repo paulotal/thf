@@ -36,6 +36,103 @@ nav, section {
     display: block;
 }
 
+/*******************************
+ * Header
+ ********************************/
+.header-left{
+  width: 43%;
+  height:150px;
+  background-color: #7494A9;
+  float:left;
+}
+
+.header-right{
+  background-color: #3E4E68;
+  width: 57%;
+  height:150px;
+  float:right;
+}
+
+#logo {  
+    background-image:url("../Images/logo_header.png"); 
+    background-repeat:no-repeat;
+    width:192px;
+    height: 70px;
+    left:214px;
+    top:41px;
+    position:relative;
+}  
+
+/* --------------------------------------- */
+#footer {
+  clear:both;
+  /*position: absolute;*/
+  bottom:0;
+}
+/* --------------------------------------- */
+
+.footer_right {
+  background-color: #7494A9;
+  width: 43%;
+  height: 85px;
+  float:right;
+}
+
+.footer_right p{
+  position:relative;
+  top: 25px;
+  width:214px;
+  text-align:justify;
+  font-size:10px;
+  color:#C3C7D0;
+    left:15px;
+}
+
+#logo-footer{
+  background-image:url("../Images/logo_footer.png"); 
+    background-repeat:no-repeat;
+    width:142px;
+    height: 52px;
+    top: 19px;
+    left:10%;
+    position: relative;
+}
+
+#logo-footer-right-text
+{
+  left: 9%;
+}
+
+.footer-left {
+  width: 57%;
+  background-color: #3E4E68;
+  float:left;
+  height: 85px;
+}
+
+.footer-left p {
+  position:relative;
+  top:10px;
+  width:260px;
+  text-align:justify;
+  font-size:12px;
+  color:#C3C7D0;
+    left:270px;
+  line-height: 15px;
+}
+
+.footer-left a {
+  color: rgb(95, 166, 206);
+}
+
+#footer-links{
+  position:relative;
+  left:270px;
+  text-align:left;
+}
+
+/*******************************************************/
+
 mark {
     background-color: #a6dbed;
     padding-left: 5px;
@@ -759,10 +856,4 @@ tr.pager td {
 	text-align:center;
 	width: 100%;
 	color: #444444;
-}
-
-#logo {
-    width:150px;
-    height:55px;
-    background:url("../Images/logo_email.png") no-repeat;
 }
